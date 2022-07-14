@@ -29,21 +29,21 @@ header h1 {
     font-family: 'Source Sans Pro';
 }
 
-nav {
+#headernav {
     text-align: center;
     position: sticky;
     background: white;
     top: 0%;
 }
 
-ul {
+#headerlist {
     list-style: none;
     padding: 0%;
     border-top: 2px solid #eee;
     border-bottom: 2px solid #eee;
 }
 
-li {
+.headerlinks {
     display: inline-block;
     padding: 5px;
     font-size: small;
@@ -71,7 +71,6 @@ main img {
 main p {
     font-size: small;
     font-family: 'Source Sans Pro';
-    /* display: block; */
     text-align: justify;
     margin: 10px;
 }
@@ -80,33 +79,75 @@ h4 {
     font-family: 'Roboto Slab';
 }
 
-/* .first {
-    background-color: white;
-    box-shadow: 0.5em 0.5em #ddd;
-    display: inline-block;
-    width: 40%;
-    padding-left: 25px; 
-    padding-right: 25px;
-    margin: auto;
-} */
-
-/* div.morearticles, section {
-    display: inline-block;
-    width: 40%;
-    } */
-
-.more-articles{
-    display: flex;
+.more-articles {
+    text-align: center;
 }
 
-section {
-    padding: 10px;
+.more-articles section {
+    display: inline-block;
+    width: 45%;
+    padding: 15px;
+    text-align: left;
 }
 
 .more-articles p {
     font-size: small;
     font-family: 'Source Sans Pro';
-    /* display: block; */
     text-align: justify;
     margin: 10px;
 }
+
+/* Added extra row of three articles */
+
+.ex-articles {
+    text-align: center;
+}
+
+.ex-articles section{
+    display: inline-block;
+    width: 30%;
+    padding: 5px;
+    text-align: left;
+}
+
+.ex-articles section img {
+    width: 100%;
+}
+
+.ex-articles p {
+    font-size: small;
+    font-family: 'Source Sans Pro';
+    text-align: justify;
+    margin: 10px;
+}
+
+#navfooter {
+    text-align: center;
+    position: sticky;
+    background: white;
+    top: 0%;
+}
+
+#footlogo {
+    list-style: none;
+    padding: 0%;
+    border-top: 2px solid #eee;
+    }
+
+#ulfooter {
+    list-style: none;
+    font-size: x-small;
+}
+
+/*Can't figure out how to get the border underneath 2022 Hacker times shorter */
+
+#copyright {
+    font-size: x-small;
+}
+
+/* I couldn't get the bottom links to spread through the width of the page automatically. Can't figure out what I'm missing. */
+
+.footerlink{     
+    display: inline-block;
+    padding: 10px;
+    }
